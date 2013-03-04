@@ -1,1 +1,25 @@
-/Users/anders/NetBeansProjects/HelloWorldGroup
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+Main_HelloWorld helloWorld = new Main_HelloWorld();
+String greeting =helloWorld.greet("Exlander");
+System.out.println(greeting);
+}
+
+public String greet(String name){
+return "Hello, "+ name;
+}
+
+}
+
+
+
+//This is part of Junit _test file
+
+public void test() {
+Main_HelloWorld helloWorld = new Main_HelloWorld();
+String greeting =helloWorld.greet("Hussein");
+
+assertEquals("Hello, Hussein",greeting);
+}
+
+}
